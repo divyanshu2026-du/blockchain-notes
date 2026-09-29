@@ -32,7 +32,7 @@
 <h2 id="utxo">6. UTXOs and a worked payment</h2><p>Bitcoin does not store each wallet’s spendable amount as one account balance field. It tracks <strong>unspent transaction outputs (UTXOs)</strong>. A transaction consumes earlier outputs as inputs and creates new outputs. Each output can be spent only once. The fee is the difference between total input value and total output value.</p><div class="card"><h3>Example</h3><p>Alice spends inputs worth <code>0.7 BTC</code> and <code>0.5 BTC</code>. She creates an output of <code>0.9 BTC</code> for Bob and <code>0.299 BTC</code> as change back to herself.</p><ol><li>Total inputs: <code>0.7 + 0.5 = 1.2 BTC</code>.</li><li>Total outputs: <code>0.9 + 0.299 = 1.199 BTC</code>.</li><li>Fee: <code>1.2 − 1.199 = 0.001 BTC</code>.</li><li>The two old UTXOs are consumed; the new Bob and change outputs are candidate UTXOs.</li></ol></div>
 <p>A transaction’s <strong>confirmations</strong> count the blocks built on top of the block that includes it, with conventions sometimes counting the containing block as the first confirmation. More confirmations usually mean more accumulated work would need to be replaced. Age or confirmation count increases confidence under the protocol’s assumptions; it does not make reversal mathematically impossible.</p>
 <iframe
-  src="assets/pdfs/lecture-3.pdf"
+  src="../assets/pdfs/lecture-3.pdf"
   width="100%"
   height="700"
   title="first-lecture">
